@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f6fa;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 200px;
+    font-family: "inherit";
+  }
+  
+  .left {
+    width: 50%;
+    height: 400px;
+    background-color: #f4f6fa;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 20px;
+    font-family: Tahoma, sans-serif;
+
+    
+  }
+  .left-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .right {
+    width: 50%;
+    height: 400px;
+    background-color: #f4f6fa;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid #C0C0C0;
+    padding-left: 20px;
+    font-family: Tahoma, sans-serif;
+  }
+
+  .input-box {
+    height: 130px;
+    width: 370px;
+    border-radius: 3px;
+    border-color: lightgray;
+    padding: 20px;
+    resize: none;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #C0C0C0;
+    font-weight: 500;
+
+  }
+  
+  .button {
+    background-color: #018aff;
+    border-radius: 7px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+
+  }
+  
+  
+  .button {
+    color: white;
+    font-size: 1.25rem;
+    font-family: inherit;
+  }
+
+  .button:hover {
+    opacity: 0.7; /* added opacity */
+  }
+
+  .results-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .results-container-text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
