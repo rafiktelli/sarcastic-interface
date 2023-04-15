@@ -10,12 +10,12 @@ const Ring = ({ percent, size = 100, color }) => {
 
   return (
     <div style={{ width: size, height: size, position: 'relative', marginRight:10 }}>
-      <svg viewBox={`0 0 ${size} ${size}`} style={{ position: 'absolute', top: 0, left: 0, }}>
+      <svg viewBox={`0 0 ${size} ${size}`} style={{ position: 'absolute', top: 0, left: 0,  }}>
         <circle
           cx={size / 2}
           cy={size / 2}
           r={radius}
-          stroke="#fff"
+          stroke="#f6f6f6"
           strokeWidth={strokeWidth}
           fill="transparent"
         />

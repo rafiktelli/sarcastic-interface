@@ -1,23 +1,53 @@
 .container {
+  background-color: #f4f6fa;
     display: flex;
     justify-content: center;
-    background-color: #f4f6fa;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 200px;
+    border-radius: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 100px;
     margin-bottom: 200px;
   }
+  .titles{
+    height: 350px;
+    width:100%;
+    background-color: #018aff;
+    align-items:center;
+    justify-content: center;
+    padding-top: 150px;
+    
+  }
   
+  .big-title{
+    font-family: Tahoma, sans-serif;
+    font-size: 4.4rem;
+    display: flex;
+    color: #FFF;
+    align-items:center;
+    justify-content: center;
+    font-weight: 200;
+  }
+  .small-title{
+    font-family: Tahoma, sans-serif;
+    font-size: 1.7rem;
+    display: flex;
+    width:100%;
+    color: #FFF;
+    align-items:center;
+    justify-content: center;
+    font-weight: 100;
+
+  }
+
   .left {
     flex: 1;
     order: 1;
     width: 50%;
     height: 400px;
-    background-color: #f4f6fa;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    background-color: #FFF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     padding-left: 20px;
     font-family: Tahoma, sans-serif;
 
@@ -33,10 +63,10 @@
   order: 2;
     width: 50%;
     height: 400px;
-    background-color: #f4f6fa;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-left: 1px solid #C0C0C0;
+    background-color: #FFF;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 1px solid #f5f5f5;
     padding-left: 20px;
     font-family: Tahoma, sans-serif;
   }
@@ -46,11 +76,11 @@
     height: 130px;
     width: 80%;
     border-radius: 3px;
-    border-color: lightgray;
+    border-color:rgb(219, 219, 219);
     padding: 20px;
     resize: none;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #C0C0C0;
     font-weight: 500;
 
