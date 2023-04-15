@@ -12,7 +12,7 @@ import axios from 'axios';
 
 
 const BigBox = () => {
-  const [inputData, setInputData] = useState("J'ai beaucoup aimé cette application");
+  const [inputData, setInputData] = useState("");
   const [outputData, setOutputData] = useState('');
   const [outputPerc, setOutputPerc] = useState('');
   const [outputSentence, setOutputSentence] = useState('');
@@ -27,9 +27,8 @@ const BigBox = () => {
     } else {
       setIsOpened(false);
     }
-    console.log("hahaha")
     //const response = await axios.post('/http://127.0.0.1:5000/predict', { input_data: inputData });
-    axios.post('http://192.168.43.135:50100/predict', {
+    axios.post('https://8bdb-77-204-146-220.ngrok-free.app/predict', {
     "text" : inputData
   })
   .then((response) => {
@@ -62,8 +61,8 @@ const BigBox = () => {
   return (
     <div>
     <div className="titles">
-    <h1 className="big-title">Analyseur de Sentiments</h1>
-    <h3 className="small-title" > Analysezzz les sentiments de vos textes en un clic </h3>
+      <h1 className="big-title">Analyseur de Sentiments</h1>
+      <h3 className="small-title" > Analyser les sentiments de vos textes en un clic </h3>
     </div>
     <div className="container">
     <div>
@@ -71,7 +70,7 @@ const BigBox = () => {
         <div class="left">
             <h3 className="left-title">Tester avec votre texte</h3>
             <br />
-            <textarea type="text" class="input-box" value={inputData} onChange={(event) => setInputData(event.target.value)} />
+            <textarea type="text" placeholder="J'ai beaucoup aimé cette application" className="input-box" value={inputData} onChange={(event) => setInputData(event.target.value)} />
             <br />
             <br />
             <br />
