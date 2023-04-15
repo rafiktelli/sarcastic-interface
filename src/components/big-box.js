@@ -29,7 +29,7 @@ const BigBox = () => {
     }
     console.log("hahaha")
     //const response = await axios.post('/http://127.0.0.1:5000/predict', { input_data: inputData });
-    axios.post('http://127.0.0.1:5000/predict', {
+    axios.post('http://192.168.43.135:50100/predict', {
     "text" : inputData
   })
   .then((response) => {
@@ -63,7 +63,7 @@ const BigBox = () => {
     <div>
     <div className="titles">
     <h1 className="big-title">Analyseur de Sentiments</h1>
-    <h3 className="small-title" > Analysez les sentiments de vos textes en un clic </h3>
+    <h3 className="small-title" > Analysezzz les sentiments de vos textes en un clic </h3>
     </div>
     <div className="container">
     <div>
